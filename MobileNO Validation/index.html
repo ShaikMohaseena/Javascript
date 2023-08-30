@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Indian Mobile Number Checking</title>
+    </head>
+    <body>
+        <form>
+            <label>Mobile Number:</label>
+            <input type="text"  name="" id="usernocheck" onkeyup="validation()">
+        </form>
+
+        <script type="text/javascript">
+            function validation (){
+                var userno = document.getElementById("usernocheck").value;
+
+                var mobilepattern =/^[6789][0-9]{9}$/ ;
+            
+
+               if(mobilepattern.test(userno)){
+                    document.getElementById("usernocheck").style.
+                  backgroundColor='green';
+
+                }
+                else{
+                    document.getElementById("usernocheck").style.
+                    backgroundColor='red';
+                }
+
+            }   
+        </script>
+    </body>
+</html>
