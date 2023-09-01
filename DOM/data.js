@@ -1,0 +1,1 @@
+document.getElementById('abc').innerHTML=[10,20,30]

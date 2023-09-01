@@ -3,6 +3,23 @@
         <script src="./one.js" text="text/javascript"></script>
     </head>
     <body>
-        <button  onmouseover=""></button>
+        <button  onmouseover="display()">Click</button>
+        <form>
+            <label>onfocus Example  </label>
+            <input id="abc" type="text" onfocus="change_color()"/><br><br>
+            <label>onblur Example  </label>
+            <input id="xyz" type="text" onblur="change_case()"/>
+
+        </form>
+        <script>
+            let change_color=()=>{
+                document.getElementById('abc').style.backgroundColor="green"
+
+            }
+            let change_case=()=>{
+              let username=  document.getElementById('xyz').value;
+              document.getElementById('xyz').value=username.toUpperCase()
+            }
+        </script>
     </body>
 </html>
